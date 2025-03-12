@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Complete Your Payment</h2>
+    <p>Scan QR or use UPI: <strong>flakzon@jio</strong></p>
+    <img src="qr-code.png" alt="UPI QR Code">
+    <input type="text" placeholder="Enter Transaction ID" id="transaction">
+    <button onclick="submitPayment()">Submit</button>
+
+    <script>
+        function submitPayment() {
+            alert("Payment Submitted Successfully!");
+            setTimeout(() => { window.location.href = "https://instagram.com/flakzon.buy"; }, 10);
+        }
+    </script>
+</body>
+</html>
