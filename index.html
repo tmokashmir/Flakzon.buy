@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flakzon SMM - Buy Followers, Likes & Views</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🚀 Flakzon</div>
+        <div class="title">Flakzon SMM</div>
+        <div class="menu">
+            <button onclick="window.location.href='terms.html'">Terms</button>
+            <button onclick="window.location.href='payment.html'">Payment</button>
+            <button onclick="window.location.href='contact.html'">Contact</button>
+        </div>
+    </header>
+
+    <marquee class="offer-banner">🔥 Limited Time Offer - Best Prices on SMM Services! 🔥</marquee>
+
+    <section class="services">
+        <h2>Choose Your Service</h2>
+        <select id="platform" onchange="loadServices()">
+            <option value="instagram">Instagram</option>
+            <option value="tiktok">TikTok</option>
+            <option value="youtube">YouTube</option>
+            <option value="telegram">Telegram</option>
+            <option value="twitter">Twitter</option>
+            <option value="facebook">Facebook</option>
+        </select>
+
+        <div id="service-options">
+            <select id="service">
+                <option value="followers">Followers</option>
+                <option value="likes">Likes</option>
+                <option value="views">Views</option>
+                <option value="comments">Comments</option>
+            </select>
+        </div>
+
+        <input type="number" id="quantity" placeholder="Enter Quantity" oninput="calculatePrice()">
+        <h3>Total Price: ₹<span id="price">0</span></h3>
+        <button onclick="window.location.href='payment.html'">Order Now</button>
+    </section>
+
+    <footer>
+        <p>Contact: <a href="mailto:flakzon@yahoo.com">flakzon@yahoo.com</a> | <a href="https://instagram.com/flakzon.buy">@flakzon.buy</a></p>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/yourwhatsappnumber" target="_blank">💬 Chat on WhatsApp</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
