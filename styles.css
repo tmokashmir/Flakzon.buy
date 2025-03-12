@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; text-align: center; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #000; color: white; }
+.logo { height: 50px; }
+nav a { margin: 0 15px; color: #000; text-decoration: none; }
+.offer-banner { background: red; color: white; padding: 5px; font-weight: bold; }
+.cta-button { display: inline-block; padding: 10px 20px; background: blue; color: white; text-decoration: none; }
+.whatsapp-float { position: fixed; bottom: 20px; right: 20px; }
