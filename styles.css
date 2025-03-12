@@ -37,4 +37,7 @@ footer {
     background: green;
     padding: 10px;
     border-radius: 5px;
+.logo img {
+    height: 50px;
+    width: auto;
 }
