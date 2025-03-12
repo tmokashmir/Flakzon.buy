@@ -25,5 +25,4 @@ For support & inquiries, reach out to us at:
 📩 Instagram: **[@flakzon.buy](https://www.instagram.com/flakzon.buy)**  
 
 ---
-© 2025 Flakzon. All rights reserved.# Flakzon.buy
-Flakzon - Your go-to platform for digital growth and engagement solutions.
+© 2025 Flakzon.buy All rights reserved.
