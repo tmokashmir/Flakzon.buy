@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Flakzon SMM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="payment.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Complete Your Payment</h1>
+        <p id="countdown">Time left: 5:00</p>
+    </header>
+
+    <section id="payment">
+        <h2>Pay via UPI</h2>
+        <p>Send the exact amount to <strong>flakzon@jio</strong></p>
+        <img src="qr-code.png" alt="UPI QR Code">
+        <input type="text" id="upi-txn-id" placeholder="Enter UPI Transaction ID" required>
+        <button onclick="confirmPayment()">Confirm Payment</button>
+    </section>
+
+    <footer>
+        <p>© 2025 Flakzon SMM | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
