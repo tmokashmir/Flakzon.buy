@@ -113,13 +113,13 @@ header {
 
 /* Payment Section */
 .payment {
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   display: none; /* Hidden by default */
 }
 
 .payment img {
-  width: 200px; /* Adjust QR code size */
+  width: 50px; /* Adjust QR code size */
   height: auto;
   margin-bottom: 10px;
 }
@@ -136,7 +136,7 @@ header {
   border-radius: 5px;
   margin: 10px 0;
   width: 80%;
-  max-width: 300px;
+  max-width: 150px;
 }
 
 .payment button {
@@ -181,11 +181,11 @@ footer a:hover {
   }
 
   .logo img {
-    width: 40px; /* Smaller logo for mobile */
+    width: 10px; /* Smaller logo for mobile */
   }
 
   .whatsapp-float img {
-    width: 30px; /* Smaller WhatsApp icon for mobile */
+    width: 15px; /* Smaller WhatsApp icon for mobile */
   }
 
   .categories, .pricing, .order-form, .payment {
@@ -193,7 +193,7 @@ footer a:hover {
   }
 
   .payment img {
-    width: 150px; /* Smaller QR code for mobile */
+    width: 50px; /* Smaller QR code for mobile */
   }
 
   footer {
