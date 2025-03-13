@@ -7,7 +7,12 @@ const serviceRates = {
     facebook: { followers: 160, likes: 30, comments: 155, views: 20 }
 };
 
+let selectedPlatform = '';
+let selectedService = '';
+let selectedRate = 0;
+
 function showServices(platform) {
+    selectedPlatform = platform;
     document.getElementById('service-options').classList.remove('hidden');
     let serviceList = document.getElementById('services-list');
     serviceList.innerHTML = '';
@@ -21,16 +26,33 @@ function showServices(platform) {
 }
 
 function selectService(platform, service) {
+    selectedService = service;
+    selectedRate = serviceRates[platform][service];
+    
     document.getElementById('order-form').classList.remove('hidden');
-    document.getElementById('selected-service').innerText = `Selected: ${service.toUpperCase()} for ${platform.toUpperCase()} at ₹${serviceRates[platform][service]} per 1K`;
+    document.getElementById('selected-service').innerText = `Selected: ${service.toUpperCase()} for ${platform.toUpperCase()} at ₹${selectedRate} per 1K`;
+    
+    // Reset quantity and price
+    document.getElementById('quantity').value = '';
+    document.getElementById('total-price').innerText = '0';
+}
+
+function updatePrice() {
+    let quantity = document.getElementById('quantity').value;
+    let totalPrice = quantity * selectedRate;
+    document.getElementById('total-price').innerText = totalPrice ? totalPrice : '0';
 }
 
 function proceedToPayment() {
     let username = document.getElementById('username').value;
-    if (!username) {
-        alert("Please enter your username");
+    let quantity = document.getElementById('quantity').value;
+    let totalPrice = document.getElementById('total-price').innerText;
+    
+    if (!username || !quantity) {
+        alert("Please enter your username and quantity");
         return;
     }
-    localStorage.setItem('orderDetails', JSON.stringify({ username }));
+
+    localStorage.setItem('orderDetails', JSON.stringify({ username, selectedPlatform, selectedService, quantity, totalPrice }));
     window.location.href = 'payment.html';
 }
