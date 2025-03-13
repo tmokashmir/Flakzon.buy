@@ -40,9 +40,9 @@ function selectService(platform, service) {
 function updatePrice() {
     let quantity = document.getElementById('quantity').value;
 
-    if (quantity < 1) {
-        document.getElementById('quantity').value = 1;
-        quantity = 1;
+    if (quantity < 0) {
+        document.getElementById('quantity').value = 0;
+        quantity = 0;
     }
 
     let totalPrice = quantity * selectedRate;
