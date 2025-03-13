@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flakzon SMM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="logo.png" alt="Flakzon Logo" class="logo">
+        <h1>Flakzon SMM</h1>
+        <nav>
+            <ul>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="terms.html">T&C</a></li>
+                <li><a href="payment.html">Payment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Offer Banner -->
+    <div class="offer-banner">
+        🔥 Limited Time Offer: Get 1k Followers for ₹149 Only! 🔥
+    </div>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <select id="platform">
+            <option value="instagram">Instagram</option>
+            <option value="tiktok">TikTok</option>
+            <option value="youtube">YouTube</option>
+            <option value="telegram">Telegram</option>
+            <option value="twitter">Twitter</option>
+            <option value="facebook">Facebook</option>
+        </select>
+
+        <select id="service">
+            <option value="followers">Followers</option>
+            <option value="likes">Likes</option>
+            <option value="views">Views</option>
+            <option value="comments">Comments</option>
+            <option value="story_views">Story Views</option>
+            <option value="blue_tick">Blue Tick</option>
+        </select>
+
+        <input type="number" id="quantity" placeholder="Enter Quantity" min="100" step="100">
+        <p>Total Price: ₹<span id="totalPrice">0</span></p>
+
+        <input type="text" id="userId" placeholder="Enter Your Instagram/TikTok ID">
+        <button onclick="submitOrder()">Order Now</button>
+    </section>
+
+    <!-- Contact & WhatsApp Floating Button -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: flakzon@yahoo.com</p>
+        <p>Instagram: <a href="https://instagram.com/flakzon.buy" target="_blank">@flakzon.buy</a></p>
+    </section>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
