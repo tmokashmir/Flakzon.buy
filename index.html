@@ -38,8 +38,8 @@
         <div id="order-form" class="hidden">
             <h3>Order Details</h3>
             <p id="selected-service"></p>
-            <input type="number" id="quantity" placeholder="Enter quantity (1K)" min="1" oninput="updatePrice()">
-            <p><strong>Total Price: ₹<span id="total-price">0</span></strong></p>
+            <input type="number" id="quantity" placeholder="Enter quantity (Min: 1000)" min="1000" step="1000" value="1000" oninput="updatePrice()">
+<p><strong>Total Price: ₹<span id="total-price">150</span></strong></p>
             <input type="text" id="username" placeholder="Enter your username" required>
             <button onclick="proceedToPayment()">Proceed to Payment</button>
         </div>
